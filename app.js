@@ -21,6 +21,6 @@ db.connect((e)=>{
 app.use(express.static(__dirname));
 
 
-app.listen('5097',()=>{
+app.listen(process.env.PORT || 3000,()=>{
     console.log("connected..")
 });
