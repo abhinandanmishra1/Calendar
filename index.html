@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='utf-8' />
+  <link  rel='stylesheet' href='./index.css' />
+  <script src='./calendar.js'></script>
+  <script src="./index.js"></script>
+  
+</head>
+
+<body>
+  
+
+  <!-- add - delete operation -->
+
+
+  <div class="main">
+    <div id="calendar-popup" class="popupForm">
+      <form action="create-event" method="POST">
+        <div class="name">
+          <label for="">Name of Event</label>
+          <input type="text" class="input">
+        </div>
+        <div class="details">
+          <label for="">Details</label>
+          <textarea name="" id="" class="textarea"></textarea>
+        </div>
+        <div class="date">
+          <label for="">Start Date</label>
+          <input type="date" class="input">
+        </div>
+        <div class="date">
+          <label for="">End Date</label>
+          <input type="date" class="input">
+        </div>
+        <button type="submit" class="addBtn">Add Event</button>
+        <button class="cancelBtn">Cancel</button>
+      </form>
+    </div>
+  </div>
+
+  <div id='calendar'></div>
+
+</body>
+
+</html>
